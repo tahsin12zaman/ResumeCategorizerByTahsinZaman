@@ -12,9 +12,9 @@ def evaluate_model():
 
     # Load and preprocess the test data
     test_data = pd.read_csv(
-        '/home/user/Desktop/Projects/ResumeCategorizerByTahsinZaman/categorized_resumes.csv')  # Adjust the path as needed
-    X_test = test_data['filename'].tolist()  # Adjust the column name if different
-    y_test = test_data['category']  # Adjust the column name if different
+        '/home/user/Desktop/Projects/ResumeCategorizerByTahsinZaman/categorized_resumes.csv')
+    X_test = test_data['filename'].tolist()
+    y_test = test_data['category']
 
     # Transform the test data using the same vectorizer used during training
     X_test_vec = vectorizer.transform(X_test)
